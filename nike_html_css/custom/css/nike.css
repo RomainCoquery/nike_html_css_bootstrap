@@ -1,0 +1,144 @@
+:root {
+    --main-color-1: black;
+    --main-color-2: yellow;
+    --main-color-3: white;
+    --main-color-4: gray;
+
+  }
+
+body {
+  padding: 0px;
+  margin: 0px auto;
+}
+
+header {
+  background-color: var(--main-color-1);
+  width: 100%;
+  display: flex;
+}
+
+.menu,
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 40%;
+}
+
+.size-icon {
+  padding: 0.4rem;
+}
+
+.logo {
+  padding: 1% 0%;
+  flex-basis: 20%;
+}
+
+.couleur-logo,
+.couleur-icone {
+  fill: var(--main-color-3);
+}
+
+.couleur-logo:hover,
+.couleur-icone:hover {
+  fill: var(--main-color-2)
+}
+
+.background_wall {
+  height: 80vh;
+  background-image: url("/images/wall.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  background-color: var(--main-color-2);
+  color: var(--main-color-1);
+}
+
+.shop {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.shoes {
+  position: relative;
+  width: calc(100%/3);
+}
+
+.shoes :hover {
+  filter: none;
+  transform: scale(1);
+  transition: all 0.6s;
+}
+
+.shoes p {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.img_shoes {
+  width: 100%;
+  filter: grayscale();
+  transform: scale(0.8);
+}
+
+.shoes .price {
+  background-color: var(--main-color-2);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 1rem;
+  left: 2rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  z-index: 10;
+  box-shadow: 10px 5px 0px var(--main-color-1);
+  transform: rotate(-10deg);
+}
+
+.shoes .name {
+  background-color: var(--main-color-2);
+  position: absolute;
+  padding: 2% 2%;
+  top: 2rem;
+  left: 10rem;
+  z-index: 10;
+  box-shadow: 10px 5px 0px var(--main-color-1);
+  transform: rotate(10deg);
+}
+
+footer {
+  display: flex;
+}
+
+footer .logo {
+  background-color: var(--main-color-2);
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .couleur-logo {
+  fill: var(--main-color-1);
+}
+
+footer .slogan {
+  background-color: var(--main-color-1);
+  color: var(--main-color-2);
+  font-size: 4rem;
+  flex-basis: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}

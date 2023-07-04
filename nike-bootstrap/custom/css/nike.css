@@ -1,0 +1,145 @@
+:root {
+    --main-color-1: #000;
+    --main-color-2: #ffff00;
+    --main-color-3: #fff;
+    --main-color-4: #6c757d;
+
+}
+
+.bg-color {
+    background-color: var(--main-color-1);
+}
+.bg-yellow {
+    background-color: var(--main-color-2);
+}
+.bg-icons {
+    background-color: var(--main-color-1);
+}
+.couleur-logo {
+    fill: var(--main-color-3);
+}
+
+.couleur-logo:hover {
+    fill: var(--main-color-2);
+}
+.size-logo {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.color-icon {
+    color: var(--main-color-3);
+}
+.color-icon:hover {
+    color: var(--main-color-2);
+}
+.no-bullet {
+    list-style-type: none;
+}
+.active {
+    background-color: var(--main-color-3) !important;
+    color: var(--main-color-1) !important;
+}
+.bg-soldes {
+    background-color: var(--main-color-2);
+}
+.big-picture {
+    border: 20px solid black;
+}
+.shoes-height {
+    height: 300px;
+}
+.couleur-logo-black {
+    fill: var(--main-color-2);
+}
+.just-do-it {
+    font-size: 72px;
+    color: var(--main-color-2);
+}
+.gray-scale {
+    filter: grayscale(100%);
+    scale: 80%;
+    transform: scale(0.8);
+    transition-duration: 0.6s;
+}
+.gray-scale:hover {
+    filter: none;
+    scale: 100%;
+    transform: scale(1);
+    transition-duration: 0.6s;
+}
+.price {
+    position:absolute;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--main-color-2);
+    color: var(--main-color-1);
+    transform: rotate(-10deg);
+    box-shadow: 10px 10px var(--main-color-1);
+}
+.model {
+    position:absolute;
+    top: 50px;
+    left: 200px;
+    background-color: var(--main-color-2);
+    color: var(--main-color-1);
+    transform: rotate(10deg);
+    box-shadow: 10px 10px var(--main-color-1);
+}
+.price-canceled {
+    text-decoration: line-through;
+}
+.image-home {
+    background-image: url("../../images/wall.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+@media screen and (max-width: 992px) {
+    .bg-color {
+        background-color: var(--main-color-1);
+    }
+    .bg-icons {
+        background-color: var(--main-color-2);
+    }
+    .color-icon {
+        color: var(--main-color-1);
+    }
+    .color-icon:hover {
+        color: var(--main-color-4);
+    }
+    .ul-spacer {
+        justify-content: space-around;
+        justify-items: center;
+        width: 100%;
+    }
+    .couleur-logo {
+        fill: var(--main-color-2);
+    }
+    .size-logo {
+        width: 200px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .size-icon {
+        width: 26px;
+        height: 26px;
+    }
+    .nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    .dropdown-menu {
+        position: relative !important;
+        width: 100%;
+        transform: none !important;
+    }
+    .active {
+        background-color: var(--main-color-2) !important;
+        color: var(--main-color-1) !important;
+    }
+}

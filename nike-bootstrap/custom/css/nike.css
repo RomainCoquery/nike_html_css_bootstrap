@@ -72,8 +72,8 @@
     position:absolute;
     top: 50px;
     left: 50px;
-    width: 100px;
-    height: 100px;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
     background-color: var(--main-color-2);
     color: var(--main-color-1);
